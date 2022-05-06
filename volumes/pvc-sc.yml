@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-2
+spec:
+  acessModes:
+    - ReadWriteOnce
+  resources:
+    request:
+      storage: 10Gi
+  storageClassName: slow #Referencia o sc (Storage class) slow criado ele vai gerar pv e pvc dinamicamente
